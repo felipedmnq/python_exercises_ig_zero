@@ -1,2 +1,5 @@
-print('Será que agora vai?')
-print('vamo porra')
+age = int(input('Idade: '))
+if 18 <= age < 70:
+    print(f'Benefício APROVADO.')
+else:
+    print('Benefício NEGADO.')
