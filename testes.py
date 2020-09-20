@@ -1,5 +1,8 @@
-age = int(input('Idade: '))
-if 18 <= age < 70:
-    print(f'Benefício APROVADO.')
+num = int(input('Digite um número: '))
+if num < 15:
+    print('Menor que 15.')
+elif num < 20:
+    print('Menor que 20.')
 else:
-    print('Benefício NEGADO.')
+    print('Olá.')
+
