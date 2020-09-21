@@ -11,3 +11,4 @@ while cont < expoente:
     prod = prod * base
     cont += 1
 print(f'{base}^{expoente} = {prod}')
+
