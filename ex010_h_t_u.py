@@ -9,12 +9,15 @@ if 1000 > num > 100:
     dez = (num - (cent * 100))
     un = (num - (cent * 100)) - (ten * 10)
     if num % 100 == 0:
-        if num  == 100:
+        if num == 100:
             print(f'{num} = {cent} centena.')
         else:
             print(f'{num} = {cent} centenas.')
-    elif num == 111:
-        print(f'{num} = {cent} centena, {ten} dezena e {un} unidade.')
+    elif num % 100 == 11:
+        if num == 111:
+            print(f'{num} = {cent} centena, {ten} dezena e {un} unidade.')
+        else:
+            print(f'{num} = {cent} centenas, {ten} dezena e {un} unidade.')
     elif num % 100 < 10:
         if num % 100 == 1:
             print(f'{num} = {cent} centenas e {un} unidade.')
@@ -27,6 +30,8 @@ if 1000 > num > 100:
             print(f'{num} = {cent} centena e {ten} dezena.')
         else:
             print(f'{num} = {cent} centenas e {ten} dezenas.')
+    elif dez % 10 == 1:
+        print(f'{num} = {cent} centenas, {ten} dezenas e {un} unidade.')
     else:
         print(f'{num} = {cent} centenas, {ten} dezenas e {un} unidades.')
 elif num <= 100:
@@ -42,8 +47,10 @@ elif num <= 100:
         else:
             print(f'{num} = {num} unidades')
     else:
-        if 10 < num < 20:
+        if num ==11:
             print(f'{num} = {ten} dezena e {un} unidade.')
+        elif 10 < num < 20:
+            print(f'{num} = {ten} dezena e {un} unidades.')
         elif num % 10 == 1:
             print(f'{num} = {ten} dezenas e {un} unidade.')
         else:
