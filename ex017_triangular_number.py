@@ -16,5 +16,3 @@ if n1 * n2 * n3 == num:
     print(f'{num} é um número triangular.')
 else:
     print(f'{num} não é triangular.')
-
-
