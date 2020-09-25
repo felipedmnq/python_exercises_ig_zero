@@ -1,4 +1,4 @@
-n= 10
-for cont in range(n, 0, -2):
-    print(cont + 1)
+for i in range(3):
+    for j in range(0, 3, 2):
+        print(i, j)
 
