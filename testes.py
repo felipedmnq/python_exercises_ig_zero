@@ -1,5 +1,6 @@
-# not True --> False.
-# not False --> True.
+n = int(input('N: '))
+soma = 0.0
 
-achar = False
-while not achar:    # --> enquanto "achar" não for False.
+for i in range(1, n+ 1):
+    soma += i / (n - i + 1)
+print(f'A soma vale: {soma}.')
