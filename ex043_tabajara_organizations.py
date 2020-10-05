@@ -14,3 +14,25 @@ informar:
     - novo salário.
 '''
 
+salary = float(input('Salário atual: R$ '))
+salary_before = salary
+percent = 0
+
+if salary <= 890:
+    salary *= 1.2
+    percent = 20
+elif 890 < salary <= 1000:
+    salary *= 1.15
+    percent = 15
+elif 1000 < salary <= 1500:
+    salary *= 1.1
+    percent = 10
+elif salary > 1500:
+    salary *= 1.05
+    percent = 5
+
+print('-' * 40)
+print(f'Salário atual: \t\t\tR${salary_before:.2f}.'
+      f'\nPercentual de almento: \t{percent}%.'
+      f'\nValor do aumento: \t\tR$ {salary - salary_before:.2f}.'
+      f'\nSalário reajustado: \tR$ {salary:.2f}.')
