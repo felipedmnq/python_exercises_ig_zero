@@ -38,5 +38,4 @@ else:
     print('Você perdeu!!')
 
 
-
 print(prize)
