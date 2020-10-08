@@ -74,5 +74,3 @@ for p in range(23):
         for i in range(len(votes)):
             print(f'{p:^7}\t\t\t{max(votes):^5}\t\t\t{(max(votes) / len(players)) * 100:.2f}')
             votes.remove(max(votes))
-
-
