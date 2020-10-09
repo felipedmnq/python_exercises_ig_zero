@@ -1,4 +1,5 @@
 numbers = [1, 2, 3, 4]
+print(numbers)
+numbers.reverse()
+print(numbers)
 
-for n in numbers:
-    print(n)
