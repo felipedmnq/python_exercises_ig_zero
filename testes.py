@@ -1,6 +1,25 @@
-numbers = [1, 2, 3, 4, 5]
+'''
+Escreva uma função de potenciação.
+'''
 
-indice = int(input('Indice: '))
+def potencia(base, expoente):
+    pot = base**expoente
 
-numbers.pop(indice)
-print(numbers)
+    return pot
+
+
+def soma(num1, num2, num3):
+    return num1 + num2 + num3
+
+
+def opMat(num1, num2):
+    soma = num1 + num2
+    return soma, num1 * num2
+
+
+import random
+def sorteio_dado():
+    return print(random.randint(1, 6))
+
+
+sorteio_dado()
