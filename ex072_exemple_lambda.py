@@ -12,5 +12,3 @@ print(f(1, 2, 3))
 d = (lambda x: lambda y: x + y)
 e = d(3)
 print(e(2))
-
-
