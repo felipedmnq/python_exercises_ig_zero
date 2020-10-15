@@ -19,6 +19,3 @@ compras1('presunto')
 compras1('pao')
 compras1('queijo')
 compras1('cerveja')
-
-
-
