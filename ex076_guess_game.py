@@ -30,7 +30,7 @@ while True:
     elif player < cpu:
         print(f'OOPS, {player} is too low, try a bigger!!!')
 
-print(print('-' * 30))
+print(print('-' * 40))
 
 if plays == 1:
     print(f'WOOOOOW, at first shoot, you are GOOD! You won!!')
