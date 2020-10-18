@@ -38,7 +38,7 @@ low_note = min(notes)
 notes.remove(big_note)
 notes.remove(low_note)
 
-print(f'Resultado final:'
+print(f'\nResultado final:'
       f'\nAtleta: {atleta}.'
       f'\nMaior nota: {big_note}'
       f'\nMenor nota: {low_note}'
