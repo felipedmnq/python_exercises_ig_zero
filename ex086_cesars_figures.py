@@ -29,7 +29,7 @@ def key_receive():
 def de_en_crypts(mode, msg, key):
 
     if mode == 'D':
-        key *= -1
+        key *= - 1
     decryptated = ''
 
     for simb in msg:
