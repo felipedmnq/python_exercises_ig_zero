@@ -40,6 +40,11 @@ que será chamada pelo programa principal.
 """
 
 def extract_bytes(file = ''):
+    '''
+    extracts information from a specific txt file.
+    :param file: txt file name.
+    :return: a list with the extracted information converted to int.
+    '''
     file_open = open(f'{file}', 'r')
     extract = file_open.readlines()
     extracted = []
@@ -50,15 +55,24 @@ def extract_bytes(file = ''):
 
 
 def report_generator(file):
+    '''
+    Generate a specific pre configurated report.
+    '''
     extracted = extract_bytes(file='users.txt')
     extracted_sum = sum(extracted)
     extract = file.readlines()
+    print()
     for c in range(len(extract)):
         print(f'{c + 1:<4}\t{extract[c][:15]:<15}{(extracted[c]) / (1024 ** 2):>15.2f} MB'
               f'\t\t\t{(extracted[c] * 100) / extracted_sum:>5.2f}%')
 
 
 def main(file):
+    '''
+    Main function to generate a report based on a specific .txt file.
+    :param file: .txt file name
+    :return: A pré configurated report based on the txt file.
+    '''
     user = open(file, 'r')
     detail = ('-' * 60)
     print(detail)
